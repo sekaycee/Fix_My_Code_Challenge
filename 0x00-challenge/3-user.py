@@ -58,7 +58,7 @@ class User():
 
 
 if __name__ == '__main__':
-    print("Test User")
+    # print("Test User")
 
     user_1 = User()
     if user_1.id is None:
@@ -98,6 +98,6 @@ password")
     if user_1.is_valid_password(89):
         print("is_valid_password should return False if compare with integer")
 
-    if user_2.is_valid_password(""):
+    if user_2.is_valid_password("No pwd"):
         print("is_valid_password should return False if no password set \
 before")
