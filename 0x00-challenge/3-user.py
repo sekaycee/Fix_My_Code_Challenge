@@ -98,6 +98,6 @@ password")
     if user_1.is_valid_password(89):
         print("is_valid_password should return False if compare with integer")
 
-    if user_2.is_valid_password("No pwd"):
+    if user_2.is_valid_password(""):
         print("is_valid_password should return False if no password set \
 before")
