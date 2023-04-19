@@ -1,11 +1,14 @@
 #!/usr/bin/python3
+""" Square mkdule """
+
 
 class square():
-
+    """ Square class """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """ Initialize the square """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -14,9 +17,11 @@ class square():
         return self.width * self.width
 
     def perimeter_of_my_square(self):
+        """ Perimeter of the Square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ String representation of the square """
         return "{}/{}".format(self.width, self.height)
 
 
